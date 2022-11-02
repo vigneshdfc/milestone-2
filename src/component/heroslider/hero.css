@@ -1,0 +1,40 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Grold-Regular";
+}
+@font-face {
+  font-family: "Grold-Regular";
+  src: url(./assets/Fonts/Grold-Regular.ttf);
+}
+.slder_show {
+  align-items: center;
+  padding: 30px;
+  position: relative;
+  margin-bottom: 50px;
+  background: linear-gradient(119.54deg, #277dc4ea 10%, #0d2c45 100%);
+  /*background-color: #1b5788fa;*/
+}
+
+.slder_show .image {
+  width: 80%;
+  margin: auto;
+  height: 400px;
+  border-radius: 10px;
+}
+
+.slick-prev,
+.slick-next {
+  position: absolute !important;
+  top: 50% !important;
+  display: block !important;
+  width: 50px !important;
+  height: 50px !important;
+  padding: 0 !important;
+  cursor: pointer !important;
+  border-radius: 50px;
+  outline: none !important;
+  background: #0d2c45 !important;
+  z-index: 2;
+}
