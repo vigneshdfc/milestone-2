@@ -16,8 +16,9 @@
     flex-direction: row;
     flex-wrap: wrap;
     gap: 50px;
-    background: linear-gradient(119.54deg, #277dc4de 10%, #0d2c45e5 100%);
-    padding: 60px 10px 60px;
+    margin-bottom: 50px;
+    
+    padding:20px 10px 60px;
   }
   .benefit_card{
     width: 350px;
