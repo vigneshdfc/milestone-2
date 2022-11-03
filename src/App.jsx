@@ -6,6 +6,7 @@ import Front from "./component/header/header";
 import SimpleSlider from "./component/heroslider/hero";
 import Images from "./component/cardshover/cards";
 import Appointment from "./component/forms/update";
+import Userform from "./component/forms/apply";
 const App = () => {
   return (
     <>
@@ -14,6 +15,7 @@ const App = () => {
       <Images />
       <Client />;
       <Appointment />
+      <Userform />
       <Bottom />;
     </>
   );

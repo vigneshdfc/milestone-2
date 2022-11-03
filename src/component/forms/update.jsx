@@ -1,6 +1,7 @@
 import "./update.css";
-import React from "react";
+import React, { useContext } from "react";
 import { useEffect } from "react";
+import { UserContext } from "../App";
 // import { Routes, Route, useNavigate } from "react-router-dom";
 const Appointment = () => {
   const initialValues = {
@@ -13,11 +14,13 @@ const Appointment = () => {
     thumb: "",
     aadhar: "",
   };
+
   const [formValues, setFormValues] = React.useState(initialValues);
   const [Errors, setErrors] = React.useState({});
   const [Submit, setSubmit] = React.useState(false);
   const [file, setFile] = React.useState("");
   const [apply, setApply] = React.useState(false);
+  const { setOpen } = useContext(UserContext);
   // const navigate = useNavigate();
   // const [click, onClick] = React.useState(0);
 
@@ -34,81 +37,70 @@ const Appointment = () => {
     setSubmit(true);
   };
 
-  const applyform = (
-    <h1
-      className="applyform"
-      onClick={(e) => {
-        e.preventDefault();
-        setApply(true);
-      }}
-    >
-      <button>APPLY NOW</button>
-    </h1>
-  );
+  // const applyform = (
+  //   <h1
+  //     className="applyform"
+  //     onClick={(e) => {
+  //       e.preventDefault();
+  //       setApply(true);
+  //     }}
+  //   >
+  //     <button>APPLY NOW</button>
+  //   </h1>
+  // );
 
   const handleFile = (e) => {
     console.log(e.target.files[0]);
-    // setFile(URL.createObjectURL(e.target.files[0]));
     setFile(reader.readAsDtatURL(file));
-    //reader.readAsDataURL(file);
   };
-  //   if (!e.target.files.length) return;
-  //   const file = e.target.files[0];
-  //   const reader = new FileReader();
-  //   reader.onload = () => {
-  //     setImage(reader.result);
-  //   };
-
-  //   reader.readAsDataURL(file);
-  // };
 
   const validate = (values) => {
     const errors = {};
     const regex = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/i;
     if (!values.name) {
-      errors.name = "name is required!";
+      errors.name = "Name is required!";
     } else if (values.user.length < 3) {
       errors.user = "name must have more than 3 characters";
     }
 
     if (!values.date) {
-      errors.date = "date is required!";
+      errors.date = "Date is required!";
     } else if (!regex.test(values.date)) {
       errors.date = "This is not a valid format!";
     }
 
     if (!values.file) {
-      errors.file = "file is required!";
+      errors.file = "File is required!";
     } else if (!regex.test(values.file)) {
       errors.file = "This is not a valid format!";
     }
 
     if (!values.address) {
-      errors.address = "address is required!";
+      errors.address = "Address is required!";
     } else if (!regex.test(values.address)) {
       errors.address = "This is not a valid format!";
     }
 
     if (!values.phoneno) {
-      errors.phoneno = "phoneno is required!";
+      errors.phoneno = "Phoneno is required!";
     } else if (!regex.test(values.phoneno)) {
       errors.phoneno = "This is not a valid format!";
     }
 
     if (!values.iris) {
-      errors.iris = "iris is required!";
+      errors.iris = "Iris is required!";
     } else if (!regex.test(values.iris)) {
       errors.iris = "This is not a valid format!";
     }
 
     if (!values.thumb) {
-      errors.thumb = "thumb is required!";
+      errors.thumb = "Thumb is required!";
     } else if (!regex.test(values.thumb)) {
       errors.thumb = "This is not a valid format!";
     }
 
     if (!values.aadhar) {
-      errors.aadhar = "aadhar is required!";
+      errors.aadhar = "Aadhar is required!";
     } else if (!regex.test(values.aadhar)) {
       errors.aadhar = "This is not a valid format!";
     }
@@ -123,35 +115,18 @@ const Appointment = () => {
   }, [Errors]);
 
   return (
-    <div
-      className="App"
-      /* style={{
-        backgroundImage: `linear-gradient(rgb(0,0,0,0.75),rgba(0,0,0,0.75)),
-    url(${backrground})`,
-        backgroundRepeat: "no-repeat",
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-        height: "100vh",
-        width: "100%",
-      }}*/
-    >
+    <div className="App">
       {Object.keys(Errors).length === 0 && Submit && (
         <span className="success">Registered Successfully</span>
       )}
-      <form onSubmit={handleSubmit} no Validate>
+      <form onSubmit={handleSubmit} no validate>
         <div className="book">
           <p> BOOK AN APPOINTMENT</p>
           <br></br>
           <div className="click">
             <div>
-              <button
-                className="applyform"
-                onClick={() => {
-                  apply.setApply ? "true" : "false";
-                }}
-              >
-                <a href="#apply">APPLY NOW</a>
-              </button>
+              {""}
+              <button onClick={() => setOpen(true)}>APPLY NOW</button>
               {/* <a href="#apply">apply now</a> */}
               {/* <button onclick={navigateapply}>APPLY NOW</button> */}
             </div>
@@ -164,11 +139,11 @@ const Appointment = () => {
           <p>UPDATE DEMOGRAPHIC</p>
           <br></br>
           <div className="inputs">
-            <label for="username">Name:</label>
+            <label htmlFor="username">Name:</label>
             <input
               type="text"
               name="name"
-              placeholder="Enter Name"
+              placeholder="Enter Your Name"
               value={formValues.name}
               onChange={handleChange}
             />
@@ -177,7 +152,7 @@ const Appointment = () => {
           <br />
           <br />
           <div className="inputs">
-            <label for="date">Date Of Birth:</label>
+            <label htmlFor="date">Date Of Birth:</label>
             <input
               type="date"
               name="date"
@@ -190,7 +165,7 @@ const Appointment = () => {
           <br />
 
           <div className="inputs">
-            <label for="file">Choose The File To Upload:</label>
+            <label htmlFor="file">Choose The File To Upload:</label>
             <input
               type="file"
               name="file"
@@ -205,11 +180,11 @@ const Appointment = () => {
           <br />
           <br />
           <div className="inputs">
-            <label for="address">Address:</label>
+            <label htmlFor="address">Address:</label>
             <input
               type="text"
               name="address"
-              placeholder="Enter Address"
+              placeholder="Enter Your Address"
               value={formValues.address}
               onChange={handleChange}
             />
@@ -218,11 +193,11 @@ const Appointment = () => {
           <br />
           <br />
           <div className="inputs">
-            <label for="phone number">Phone Number:</label>
+            <label htmlFor="phone number">Phone Number:</label>
             <input
               type="number"
               name="phoneno"
-              placeholder="Enter Phone Number"
+              placeholder="Enter Your Phone Number"
               value={formValues.phoneno}
               onChange={handleChange}
             />
@@ -232,12 +207,12 @@ const Appointment = () => {
           <br />
           <p>BIOMETRIC UPDATE</p>
           <br></br>
-          <div class="inputs">
-            <label for="iris">Iris:</label>
+          <div className="inputs">
+            <label htmlFor="iris">Iris:</label>
             <input
               type="text"
               name="iris"
-              placeholder="Enter Iris"
+              placeholder="Enter Your Iris"
               value={formValues.iris}
               onChange={handleChange}
             />
@@ -246,11 +221,11 @@ const Appointment = () => {
           <br />
           <br />
           <div className="inputs">
-            <label for="thumb">Thumb:</label>
+            <label htmlFor="thumb">Thumb:</label>
             <input
               type="text"
               name="thumb"
-              placeholder="Enter Thumb"
+              placeholder="Enter Your Thumb"
               value={formValues.thumb}
               onChange={handleChange}
             />
@@ -262,7 +237,7 @@ const Appointment = () => {
           <br />
           <br />
           <div className="inputs">
-            <label for="aadhar">Enter Your Aadhar No:</label>
+            <label htmlFor="aadhar">Enter Your Aadhar No:</label>
             <input
               type="number"
               name="aadhar"
@@ -284,11 +259,4 @@ const Appointment = () => {
     </div>
   );
 };
-
-// return (
-//   <React.Fragment>
-//     <Customer />
-//   </React.Fragment>
-// );
-
 export default Appointment;
