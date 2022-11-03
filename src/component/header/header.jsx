@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./Header.css";
 
 const Front = () => {
@@ -15,7 +16,7 @@ const Front = () => {
       </div>
       <div className="Topnav">
         <h3>LOGO</h3>
-        <a href="#">Home</a>
+        <Link to="/Home">Home</Link>
         <div className="Dropdown">
           <div
             className="dropbtn_content"
@@ -38,8 +39,8 @@ const Front = () => {
             )}
           </div>
         </div>
-        <a href="#">Our Services</a>
-        <a href="#">About Us</a>
+        <Link to="/Service">Our Services</Link>
+        <Link to="/About">About Us</Link>
         <div className="but">
           <button>LOGIN</button>
         </div>
