@@ -1,8 +1,7 @@
 import "./update.css";
 import React, { useContext } from "react";
 import { useEffect } from "react";
-import { UserContext } from "../App";
-// import { Routes, Route, useNavigate } from "react-router-dom";
+import { UserContext } from "../../App";
 const Appointment = () => {
   const initialValues = {
     name: "",
@@ -19,7 +18,7 @@ const Appointment = () => {
   const [Errors, setErrors] = React.useState({});
   const [Submit, setSubmit] = React.useState(false);
   const [file, setFile] = React.useState("");
-  const [apply, setApply] = React.useState(false);
+  // const [apply, setApply] = React.useState(false);
   const { setOpen } = useContext(UserContext);
   // const navigate = useNavigate();
   // const [click, onClick] = React.useState(0);

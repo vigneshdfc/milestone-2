@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: "Grold-Bold";
+  src: url(./achieve/assets/Fonts/Grold-Bold.ttf);
+}
+@font-face {
+  font-family: "Grold-Light";
+  src: url(./assets/Fonts/Grold-Light.ttf);
+}
+@font-face {
+  font-family: "Grold-Medium";
+  src: url(./assets/Fonts/Grold-Medium.ttf);
+}
+@font-face {
+  font-family: "Grold-SemiLight";
+  src: url(./assets/Fonts/Grold-SemiLight.ttf);
+}
+.head {
+  font-family: "Grold-Light";
+  font-style: normal;
+  font-size: 64px;
+  text-align: center;
+  color: rgb(92, 88, 88);
+}
+#quote {
+  font-family: "Grold-SemiLight";
+  font-style: normal;
+  font-size: 24px;
+  text-align: center;
+  color: rgb(185, 174, 174);
+}
+
+.styleservice {
+  /* width: 80%; */
+  margin: 3rem auto;
+  margin-block: 8rem;
+}
+.styleserivicesbox {
+  grid-template-columns: repeat(4, 1fr);
+  display: grid;
+  gap: 3rem;
+  text-align: center;
+}
+.styleservicesboxitem {
+  margin-top: 6rem;
+  margin-bottom: 2rem;
+}
+.styleserivicesbox :hover {
+  transition: scale(1.5);
+}
+.styleservicesboxitem h3 {
+  font-family: "Grold-Bold";
+  font-style: normal;
+}
+.styleservicesboxitem {
+  font-family: "Grold-Light";
+  font-style: normal;
+}
+#head {
+  text-align: center;
+  font-family: "Grold-Bold";
+  font-style: normal;
+  font-size: 24px;
+  padding: 8rem 0 0 0;
+}
+.circle {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  padding: 0 0 0 5.5rem;
+}
+.circle p {
+  font-size: 24px;
+  font-family: "Grold-Light";
+  font-style: normal;
+}
+.overall {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3rem;
+  justify-content: space-evenly;
+  margin: 2rem auto;
+}
+@media (max-width: 30rem) {
+  .styleserivicesbox {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 0.5rem;
+  }
+  .overall {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 0.5rem;
+  }
+}
+@media (max-width: 48rem) {
+  .styleserivicesbox {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+  .overall {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1rem;
+  }
+}
