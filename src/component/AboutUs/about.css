@@ -1,0 +1,156 @@
+@font-face {
+  font-family: "Grold-Bold";
+  src: url(./Fonts/Grold-Bold.ttf);
+}
+@font-face {
+  font-family: "Grold-Light";
+  src: url(./Fonts/Grold-Light.ttf);
+}
+@font-face {
+  font-family: "Grold-Medium";
+  src: url(./Fonts/Grold-Medium.ttf);
+}
+@font-face {
+  font-family: "Grold-Regular";
+  src: url(./Fonts/Grold-Regular.ttf);
+}
+@font-face {
+  font-family: "Grold-SemiLight";
+  src: url(./Fonts/Grold-SemiLight.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Grold-Regular";
+  color: white;
+}
+.headContainer {
+  background: linear-gradient(119.54deg, #000046 0%, #1cb5e0 100%);
+
+  padding: 40px 80px;
+}
+
+.headsWrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  place-items: center;
+  margin-top: 30px;
+}
+h5 {
+  font-size: 20px;
+}
+h5:hover {
+  color: rgb(2, 26, 38);
+}
+.headImg img {
+  width: 100%;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+}
+.headImg img:hover {
+  opacity: 0.8;
+  transform: translateY(20px);
+}
+
+.sty {
+  box-sizing: border-box;
+  border-radius: 1px;
+  border: 1px solid black;
+  padding: 150px;
+  background: linear-gradient(119.54deg, #000046 0%, #1cb5e0 100%);
+}
+.h {
+  font-size: 30px;
+  padding-bottom: 50px;
+  color: white;
+}
+.story {
+  font-size: 20px;
+  font-family: "Grold-Regular";
+  font-style: normal;
+  text-align: center;
+  color: white;
+  font-weight: 600;
+}
+
+.why {
+  box-sizing: border-box;
+  border-radius: 1px;
+  border: 1px solid black;
+  padding: 100px;
+  background: linear-gradient(119.54deg, #000046 0%, #1cb5e0 100%);
+}
+
+.he {
+  font-size: 25px;
+}
+
+.she {
+  font-size: 20px;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  font-family: "Grold-Regular";
+  font-style: normal;
+  text-align: center;
+  font-weight: 600;
+}
+.tree {
+  border-radius: 1px;
+  border: 1px solid black;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding: 40px;
+  background: linear-gradient(119.54deg, #000046 0%, #1cb5e0 100%);
+
+  /* transition: all 0.3s; */
+}
+.tree .a p {
+  font-size: 30px;
+  text-align: center;
+  padding: 30px;
+  transition: 0.3s;
+}
+
+.service {
+  box-sizing: border-box;
+  border-radius: 1px;
+  border: none;
+  padding: 150px;
+  font-size: 50px;
+  background: linear-gradient(119.54deg, #000046 0%, #1cb5e0 100%);
+}
+
+button {
+  height: 40px;
+  width: 250px;
+  border-radius: 10px;
+  cursor: pointer;
+  border-style: solid;
+  border-top-width: 2px;
+  border-right-width: 2px;
+  border-left-width: 2px;
+  border-bottom-width: 2px;
+  color: #ffffff;
+  border-color: #0d2c45;
+  background-color: #0d2c45;
+  border-radius: 46px;
+  font-size: 20px;
+  font-weight: 600px;
+  line-height: 1;
+}
+button:hover {
+  background-color: #7fa1b9a1;
+}
+
+.a:hover {
+  transform: scale(1.1);
+  opacity: 0.7;
+  cursor: pointer;
+}

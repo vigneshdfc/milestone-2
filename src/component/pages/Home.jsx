@@ -2,7 +2,8 @@ import React from "react";
 import Client from "../../component/reviews/slide";
 import Bottom from "../../component/footer/footer";
 import SimpleSlider from "../heroslider/hero";
-import Images from  "../cardshover/cards";
+import Images from "../cardshover/cards";
+import Appointment from "../forms/update";
 
 const Home = () => {
   return (
@@ -10,6 +11,7 @@ const Home = () => {
       <SimpleSlider />
       <Images />
       <Client />
+      <Appointment />
       <Bottom />
     </>
   );
