@@ -29,12 +29,9 @@ const Front = () => {
             </button>
             {dropdown && (
               <div className="list">
-                <li>
-                  <a href="#Book">Book Ur Appoints</a>
-                </li>
-                <li>
-                  <a href="#Book">Update Ur Aadhaar</a>
-                </li>
+                <a href="#Book">
+                  <h6> Book an Appointments</h6>
+                </a>
               </div>
             )}
           </div>
