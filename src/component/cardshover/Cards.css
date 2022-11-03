@@ -1,58 +1,57 @@
-@font-face{
-    font-family: "Grold-Regular";
-    src:url(./Font/Grold-Regular.ttf)
-  }
-  
-  *{
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-    font-family: "Grold-Regular";
-  }
-  
-  
-  .benefit_section{
-    display:flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 50px;
-    background: linear-gradient(119.54deg, #277dc4de 10%, #0d2c45e5 100%);
-    padding: 60px 10px 60px;
-  }
-  .benefit_card{
-    width: 350px;
-    height: 250px;
-    font-size: 20px;
-    text-align: center;
-    border: 1px solid #141414;
-    transition: transform.3s; 
-    border-radius: 30px;
-    margin: auto;
-  }
-  .benefit_card:hover{
-    transform: scale(1.1);
-    background-image: linear-gradient(rgba(0,0,0,0.55),rgba(0,0,0,0.55));
-    opacity: 0.7;
-    cursor: pointer;
-  }
-  .appp{
-    margin-top: 40%;
-    height: 120px;
-    width: 300px;
-    align-items: center;
-    background: linear-gradient(119.54deg, #277dc4de 10%, #0d2c45e5 100%);
-    color: black;
-    position: relative;
-    margin-left: 5%;
-    box-shadow: 10px 15px 10px;
-    border-radius: 20px;
-  }
-  .appp h3{
-    padding:10px;
-    font-weight: 800;
-  }
-  .appp p{
-    font-size: 18px;
-    font-family: "grold";
-    font-weight: 500;
-  }
+@font-face {
+  font-family: "Grold-Regular";
+  src: url(./Font/Grold-Regular.ttf);
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Grold-Regular";
+}
+
+.benefit_section {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 50px;
+
+  padding: 20px 10px 60px;
+}
+.benefit_card {
+  width: 350px;
+  height: 250px;
+  font-size: 20px;
+  text-align: center;
+  border: 1px solid #141414;
+  transition: transform.3s;
+  border-radius: 30px;
+  margin: auto;
+}
+.benefit_card:hover {
+  transform: scale(1.1);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55));
+  opacity: 0.7;
+  cursor: pointer;
+}
+.appp {
+  margin-top: 40%;
+  height: 120px;
+  width: 300px;
+  align-items: center;
+  background: linear-gradient(119.54deg, #277dc4de 10%, #0d2c45e5 100%);
+  color: black;
+  position: relative;
+  margin-left: 5%;
+  box-shadow: 10px 15px 10px;
+  border-radius: 20px;
+}
+.appp h3 {
+  padding: 10px;
+  font-weight: 800;
+}
+.appp p {
+  font-size: 18px;
+  font-family: "grold";
+  font-weight: 500;
+}
