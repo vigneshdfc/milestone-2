@@ -16,7 +16,7 @@ const Front = () => {
       </div>
       <div className="Topnav">
         <h3>LOGO</h3>
-        <Link to="/Home">Home</Link>
+        <Link to="/home">Home</Link>
         <div className="Dropdown">
           <div
             className="dropbtn_content"
