@@ -19,6 +19,9 @@ h1 {
 .customers_wrapper {
   padding: 10px;
 }
+.review {
+  width: 100%;
+}
 .review .customers {
   box-sizing: border-box;
   background-color: white;
