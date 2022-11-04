@@ -37,7 +37,7 @@ const Front = () => {
           </div>
         </div>
         <Link to="/Service">Our Services</Link>
-        <Link to="/About">About Us</Link>
+        <Link to="/About">ABOUT US</Link>
         <div className="but">
           <button>LOGIN</button>
         </div>
