@@ -4,7 +4,7 @@ import "./Header.css";
 
 const Front = () => {
   return (
-    <div className="mainpage">
+    <div className="main">
       <div className="hero">
         <h2>
           Government Of India

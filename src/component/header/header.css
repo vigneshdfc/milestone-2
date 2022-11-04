@@ -3,11 +3,6 @@
   padding: 0;
   box-sizing: border-box;
 }
-
-.mainpage {
-  position: sticky;
-  top: 0;
-}
 .Topnav {
   display: flex;
   align-items: center;
