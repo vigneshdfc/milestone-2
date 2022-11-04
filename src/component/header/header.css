@@ -20,7 +20,6 @@
 }
 
 .dropbtn {
-  width: 10%;
   text-decoration: none;
   cursor: pointer;
   display: inline-block;
@@ -43,7 +42,7 @@
   overflow: hidden;
 }
 
-button {
+.but button {
   width: 100%;
   text-decoration: none;
   cursor: pointer;
