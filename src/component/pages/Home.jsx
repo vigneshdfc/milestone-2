@@ -3,6 +3,8 @@ import Client from "../../component/reviews/slide";
 import Bottom from "../../component/footer/footer";
 import SimpleSlider from "../heroslider/hero";
 import Images from "../cardshover/cards";
+import Appointment from "../forms/update";
+import UserForm from "../forms/apply";
 
 export const UserContext = React.createContext(false);
 const Home = () => {
@@ -12,7 +14,10 @@ const Home = () => {
       <SimpleSlider />
       <Images />
       <Client />
-      <UserContext.Provider value={{ open, setOpen }}></UserContext.Provider>
+      <UserContext.Provider value={{ open, setOpen }}>
+        <Appointment />
+        <UserForm />
+      </UserContext.Provider>
       <Bottom />
     </>
   );

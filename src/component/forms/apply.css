@@ -113,3 +113,10 @@ button:hover {
   display: flex;
   padding-left: 160px;
 }
+@media (max-width: 780px) {
+  .details,
+  input,
+  select {
+    width: 100%;
+  }
+}

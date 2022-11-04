@@ -15,11 +15,11 @@ const Front = () => {
       <div className="Topnav">
         <h3>LOGO</h3>
         <Link to="/Home">Home</Link>
-        <Link to="/Update">Book an Appointment</Link>
+        <a href="#app">Book An Appointment</a>
         <Link to="/Service">Our Services</Link>
         <Link to="/about">About Us</Link>
         <div className="but">
-          <button>LOGIN</button>
+          <button>JOINUS</button>
         </div>
       </div>
     </div>
