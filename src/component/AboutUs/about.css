@@ -127,7 +127,7 @@ h5:hover {
   background: linear-gradient(119.54deg, #000046 0%, #1cb5e0 100%);
 }
 
-button {
+.service button {
   height: 40px;
   width: 250px;
   border-radius: 10px;
@@ -145,7 +145,8 @@ button {
   font-weight: 600px;
   line-height: 1;
 }
-button:hover {
+
+.service button:hover {
   background-color: #7fa1b9a1;
 }
 
