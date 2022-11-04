@@ -15,6 +15,9 @@
   flex-direction: row;
   flex-wrap: wrap;
   gap: 50px;
+
+  padding: 20px 10px 60px;
+
   background: linear-gradient(119.54deg, #277dc4de 10%, #0d2c45e5 100%);
   padding: 60px 10px 60px;
 }

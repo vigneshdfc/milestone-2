@@ -3,17 +3,13 @@
   padding: 0;
   margin: 0;
   font-family: "Grold-Regular";
-  font-weight: bold;
 }
 @font-face {
   font-family: "Grold-Regular";
-  src: url(./Fonts/Grold-Regular.ttf);
-}
-.inputs label {
-  color: black;
+  src: url(./assets/Fonts/Grold-Regular.ttf);
 }
 
-.App {
+.collect {
   padding: 40px;
   box-sizing: border-box;
   align-items: center;
@@ -24,65 +20,74 @@
   letter-spacing: 1px;
 }
 
-.book {
+.type {
   padding: 20px;
+  border: 1px solid #0d2c45;
   border-width: 1px;
   border-style: solid;
   border-color: var(--ast-border-color);
-
-  box-shadow: 2px 1px 2px 1px #0d2c45;
-  /* background-color: #000046;*/
+  box-shadow: 2px 1px 2px 1px #000046;
 }
-.book:hover {
+.type:hover {
   background-color: rgba(227, 227, 241, 0.479);
 }
-
-.click a {
-  color: white;
-  text-decoration: none;
+.details :hover {
+  background-color: rgba(227, 227, 241, 0.479);
 }
-.click a:hover {
-  background-color: #1cb5e0;
-}
-
-input {
+select {
   display: block;
-  color: #666;
+  color: #000046;
   padding: 0.75em;
   height: auto;
   border-width: 1px;
   border-style: solid;
   border-color: var(--ast-border-color);
   border-radius: 10px;
-  /* background: #fafafa; */
-  box-shadow: 2px 4px #0d2c45;
+  background: #fafafa;
+  box-shadow: 2px 4px #000046;
   box-sizing: border-box;
   transition: all 0.2s linear;
   outline: none;
   width: 600px;
 }
-input:hover {
-  background-color: #d3d3de;
+
+details {
+  display: block;
+  color: #000046;
+  padding: 0.75em;
+  height: auto;
+  border-width: 1px;
+  border-style: solid;
+  border-color: var(--ast-border-color);
+  border-radius: 10px;
+  background: #fafafa;
+  box-shadow: 2px 4px rgba(128, 128, 128, 0.555);
+  box-sizing: border-box;
+  transition: all 0.2s linear;
+  outline: none;
+  width: 600px;
 }
-.App p {
+.details h4 {
+  color: black;
+}
+
+.collect p {
   background: linear-gradient(119.54deg, #000046 0%, #1cb5e0 100%);
   /* background-color: #0d2c45; */
-  box-shadow: 2px 4px #0d2c45;
+  box-shadow: 2px 4px #000046;
   box-sizing: border-box;
   color: white;
   text-align: center;
   border-radius: 5px;
   padding: 10px;
 }
-.App p:hover {
-  background-color: #7fa1b9a1;
+.type label {
+  color: black;
 }
-
-.book button {
-  box-shadow: 2px 1px #0d2c45;
-  border-style: solid;
+button {
+  box-shadow: 2px 1px #000046;
   color: #ffffff;
-  background: linear-gradient(119.54deg, #000046 10%, #1cb5e0 100%);
+  background: linear-gradient(119.54deg, #000046 0%, #1cb5e0 100%);
   border-radius: 16px;
   padding: 15px 36px;
   font-size: 10px;
@@ -94,42 +99,17 @@ input:hover {
   gap: 20px;
 }
 button:hover {
-  background-color: gainsboro;
+  color: wheat;
 }
 .click {
   display: flex;
   gap: 60px;
   padding: 25px;
 }
-.book {
+.type {
   justify-content: space-around;
 }
-.close {
+.success {
   display: flex;
   padding-left: 160px;
-}
-
-@media (max-width: 480px) {
-  .book {
-    width: 100%;
-  }
-  .App {
-    padding: 20px;
-    box-sizing: border-box;
-    align-items: center;
-    justify-content: center;
-    display: flex;
-    font-size: 10px;
-    font-weight: bold;
-    letter-spacing: 1px;
-  }
-  .book {
-    padding: 10px;
-    /* border: 1px solid #0d2c45; */
-    border-width: 1px;
-    border-style: solid;
-    border-color: var(--ast-border-color);
-    box-shadow: 2px 1px 2px 1px #0d2c45;
-    /* background-color: #000046;*/
-  }
 }

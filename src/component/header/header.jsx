@@ -3,10 +3,8 @@ import { Link } from "react-router-dom";
 import "./Header.css";
 
 const Front = () => {
-  const [dropdown, setDropdown] = React.useState(false);
   return (
-    <div className="mainpage">
-      {" "}
+    <div className="main">
       <div className="hero">
         <h2>
           Government Of India
@@ -17,27 +15,9 @@ const Front = () => {
       <div className="Topnav">
         <h3>LOGO</h3>
         <Link to="/Home">Home</Link>
-        <div className="Dropdown">
-          <div
-            className="dropbtn_content"
-            onMouseEnter={() => setDropdown(true)}
-            onMouseLeave={() => setDropdown(false)}
-          >
-            <button class="dropbtn">
-              Book
-              <i class="fa fa-caret-down"></i>
-            </button>
-            {dropdown && (
-              <div className="list">
-                <a href="#Book">
-                  <h6> Book an Appointments</h6>
-                </a>
-              </div>
-            )}
-          </div>
-        </div>
+        <Link to="/Update">Book an Appointment</Link>
         <Link to="/Service">Our Services</Link>
-        <Link to="/About">ABOUT US</Link>
+        <Link to="/about">About Us</Link>
         <div className="but">
           <button>LOGIN</button>
         </div>
@@ -46,3 +26,24 @@ const Front = () => {
   );
 };
 export default Front;
+{
+  /* <div className="Dropdown">
+          <div
+            className="dropbtn_content"
+            onMouseEnter={() => setDropdown(true)}
+            onMouseLeave={() => setDropdown(false)}
+          >
+            <div class="dropbtn">
+              Book
+              <i class="fa fa-caret-down"></i>
+            </div>
+            {dropdown && (
+              <div className="list">
+                <a href="#Book">
+                  <h6> Book an Appointments</h6>
+                </a>
+              </div>
+            )}
+          </div>
+            </div>*/
+}

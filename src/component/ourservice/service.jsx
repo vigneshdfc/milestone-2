@@ -1,10 +1,10 @@
 import React from "react";
 import "./service.css";
-import bank from "../ourservice/assets/Bank.svg";
-import update from "../ourservice/assets/upload.svg";
-import verified from "../ourservice/assets/verified.png";
-import fingerprint from "../ourservice/assets/fingerprint.svg";
-import check from "../component/ourservice/assets/checkcircle.svg";
+// import bank from "../ourservice/assets/Bank.svg";
+// import update from "../ourservice/assets/upload.svg";
+// import verified from "../ourservice/assets/verified.png";
+// import fingerprint from "../ourservice/assets/fingerprint.svg";
+// import check from "../../component/ourservice/assets/checkcircle.svg";
 
 const Service = () => {
   return (

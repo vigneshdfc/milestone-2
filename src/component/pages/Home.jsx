@@ -2,15 +2,17 @@ import React from "react";
 import Client from "../../component/reviews/slide";
 import SimpleSlider from "../heroslider/hero";
 import Images from "../cardshover/cards";
-import Appointment from "../forms/update";
 
+export const UserContext = React.createContext(false);
 const Home = () => {
+  const [open, setOpen] = React.useState(false);
   return (
     <>
       <SimpleSlider />
       <Images />
       <Client />
-      <Appointment />
+      <UserContext.Provider value={{ open, setOpen }}></UserContext.Provider>
+      <Bottom />
     </>
   );
 };
