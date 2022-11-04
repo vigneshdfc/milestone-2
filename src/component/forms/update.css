@@ -22,8 +22,6 @@
   font-size: 15px;
   font-weight: bold;
   letter-spacing: 1px;
-  background-blend-mode: initial;
-  transition-property: initial;
 }
 
 .book {
@@ -31,6 +29,7 @@
   border-width: 1px;
   border-style: solid;
   border-color: var(--ast-border-color);
+
   box-shadow: 2px 1px 2px 1px #0d2c45;
   /* background-color: #000046;*/
 }
@@ -75,7 +74,7 @@ input:hover {
   border-radius: 5px;
   padding: 10px;
 }
-p:hover {
+.App p:hover {
   background-color: #7fa1b9a1;
 }
 
