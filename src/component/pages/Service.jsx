@@ -35,9 +35,11 @@ const Service = () => {
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
         </div>
       </div>
-      <div id="head">
+
+      <div className="heading">
         <h1>Benefits</h1>
       </div>
+
       <div className="overall">
         <div className="circle">
           <img src={check} />

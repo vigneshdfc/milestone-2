@@ -18,7 +18,9 @@ const Client = () => {
   };
   return (
     <div>
-      <h1>REVIEWS</h1>
+      <div className="heading">
+        <h1>REVIEWS</h1>
+      </div>
       <div className="review">
         <Slider {...settings}>
           <div className="customers_wrapper">

@@ -2,23 +2,22 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  
 }
 @font-face {
   font-family: "Grold-Bold";
-  src: url(./achieve/assets/Fonts/Grold-Bold.ttf);
+  src: url(../ourservice/assets/Fonts/Grold-Bold.ttf);
 }
 @font-face {
   font-family: "Grold-Light";
-  src: url(./assets/Fonts/Grold-Light.ttf);
+  src: url(../ourservice/assets/Fonts/Grold-Light.ttf);
 }
 @font-face {
   font-family: "Grold-Medium";
-  src: url(./assets/Fonts/Grold-Medium.ttf);
+  src: url(../ourservice/assets/Fonts/Grold-Medium.ttf);
 }
 @font-face {
   font-family: "Grold-SemiLight";
-  src: url(./assets/Fonts/Grold-SemiLight.ttf);
+  src: url(../ourservice/assets/Fonts/Grold-SemiLight.ttf);
 }
 .head {
   font-family: "Grold-Light";
@@ -61,13 +60,14 @@
   font-family: "Grold-Light";
   font-style: normal;
 }
-#head {
+.heading h1 {
   text-align: center;
   font-family: "Grold-Bold";
   font-style: normal;
-  font-size: 24px;
+  font-size: 44px;
   padding: 8rem 0 0 0;
 }
+
 .circle {
   display: flex;
   flex-direction: row;

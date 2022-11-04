@@ -20,7 +20,10 @@ h1 {
   padding: 10px;
 }
 .review {
-  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid white;
+  padding: 20px;
+  margin: 30px;
 }
 .review .customers {
   box-sizing: border-box;

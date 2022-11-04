@@ -4,6 +4,7 @@ import SimpleSlider from "../heroslider/hero";
 import Images from "../cardshover/cards";
 import Appointment from "../forms/update";
 import Bottom from "../../component/footer/footer";
+import UserForm from "../forms/apply";
 
 export const UserContext = React.createContext(false);
 const Home = () => {

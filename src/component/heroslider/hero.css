@@ -6,7 +6,7 @@
 }
 @font-face {
   font-family: "Grold-Regular";
-  src: url(./assets/Fonts/Grold-Regular.ttf);
+  src: url(../reviews/fonts/Grold-Regular.ttf);
 }
 .slder_show {
   align-items: center;

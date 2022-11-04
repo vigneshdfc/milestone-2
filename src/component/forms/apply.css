@@ -84,7 +84,7 @@ details {
 .type label {
   color: black;
 }
-button {
+.type button {
   box-shadow: 2px 1px #000046;
   color: #ffffff;
   background: linear-gradient(119.54deg, #000046 0%, #1cb5e0 100%);
