@@ -7,7 +7,9 @@ import Images from "./component/cardshover/cards";
 import { Route, Routes } from "react-router-dom";
 import Service from "./component/pages/Service";
 import Home from "./component/pages/Home";
-import Appoinment from "./component/forms/update";
+import Heads from "./component/AboutUs/about";
+import Appointment from "./component/forms/update";
+import Bottom from "./component/footer/footer";
 
 const App = () => {
   return (
@@ -18,6 +20,8 @@ const App = () => {
         <Route path="/" element={<Home />} />
         <Route path="/Service" element={<Service />} />
         <Route path="/Home" element={<Home />} />
+        <Route path="/about" element={<Heads />} />
+        <Route path="Update" element={<Appointment />} />
       </Routes>
     </>
   );
