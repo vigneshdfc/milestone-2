@@ -3,7 +3,6 @@
   padding: 0;
   box-sizing: border-box;
 }
-
 .Topnav {
   display: flex;
   align-items: center;
@@ -11,35 +10,13 @@
   background: linear-gradient(119.54deg, #000046 0%, #1cb5e0 100%);
   padding: 2%;
   position: sticky;
+  top: 0;
 }
 
 .Topnav a {
   text-decoration: none;
   color: wheat;
   font-size: x-large;
-}
-
-.dropbtn {
-  text-decoration: none;
-  cursor: pointer;
-  display: inline-block;
-  text-align: center;
-  border: none;
-  line-height: 50px;
-  font-size: x-large;
-  font-weight: 600;
-  height: 50px;
-  padding: 0 2rem;
-  color: #c07a41;
-  letter-spacing: 0;
-  color: wheat;
-  background-color: #5c392900;
-  box-shadow: 0 1px 3px 0 rgb(0 0 0 / 12%);
-  border-radius: 10px;
-}
-.Dropdown {
-  float: left;
-  overflow: hidden;
 }
 
 .but button {
@@ -60,29 +37,6 @@
   background-color: #5c39298e;
   box-shadow: 0 1px 3px 0 rgb(0 0 0 / 12%);
   border-radius: 10px;
-}
-
-.Topnav a:hover,
-.dropdown:hover .dropbtn {
-  background-color: rgba(211, 80, 80, 0.274);
-  border-radius: 10px;
-}
-
-.dropdown-content a {
-  float: none;
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-  text-align: left;
-}
-
-.dropdown-content a:hover {
-  background-color: #ddd;
-}
-
-.dropdown:hover .dropdown-content {
-  display: block;
 }
 
 .hero {

@@ -1,9 +1,10 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./Header.css";
 
 const Front = () => {
   return (
-    <div className="mainpage">
+    <div className="main">
       <div className="hero">
         <h2>
           Government Of India
@@ -13,10 +14,10 @@ const Front = () => {
       </div>
       <div className="Topnav">
         <h3>LOGO</h3>
-        <a href="#">Home</a>
-        <a href="#">Book an Appointment</a>
-        <a href="#">Our Services</a>
-        <a href="#">About Us</a>
+        <Link to="/Home">Home</Link>
+        <Link to="/Update">Book an Appointment</Link>
+        <Link to="/Service">Our Services</Link>
+        <Link to="/about">About Us</Link>
         <div className="but">
           <button>LOGIN</button>
         </div>
