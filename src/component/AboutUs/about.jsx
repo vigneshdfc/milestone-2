@@ -102,11 +102,11 @@ const Heads = () => {
       </div>
 
       <div className="service">
-        <div>
-          <b>STAY HOME,STAY SAFE JUST BOOK AN SERVICE</b>{" "}
+        <div className="sone">
+          <b>STAY HOME,STAY SAFE,JUST BOOK AN SERVICE.</b>
         </div>
-        <div>
-          <button>BOOK A SERVICE</button>
+        <div className="sotwo">
+          <b>SIMPLY WANT TO MAKE WHAT YOU WANT.</b>
         </div>
       </div>
     </>
