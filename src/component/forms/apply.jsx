@@ -1,7 +1,7 @@
 import "./apply.css";
 import React, { useContext } from "react";
 import { useEffect } from "react";
-import { UserContext } from "../../App";
+import { UserContext } from "../pages/Home";
 const Userform = () => {
   const initialValues = {
     user: "",
@@ -75,7 +75,7 @@ const Userform = () => {
       console.log(formValues);
     }
   }, [Errors]);
-
+  console.log(open);
   if (!open) return null;
 
   return (

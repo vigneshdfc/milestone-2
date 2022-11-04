@@ -1,7 +1,7 @@
 import "./update.css";
 import React, { useContext } from "react";
 import { useEffect } from "react";
-import { UserContext } from "../../App";
+import { UserContext } from "../pages/Home";
 const Appointment = () => {
   const initialValues = {
     name: "",
@@ -114,7 +114,7 @@ const Appointment = () => {
   }, [Errors]);
 
   return (
-    <div className="App">
+    <div className="App" id="app">
       {Object.keys(Errors).length === 0 && Submit && (
         <span className="success">Registered Successfully</span>
       )}
@@ -125,7 +125,9 @@ const Appointment = () => {
           <div className="click">
             <div>
               {""}
-              <button onClick={() => setOpen(true)}>APPLY NOW</button>
+              <button type="button" onClick={() => setOpen(true)}>
+                APPLY NOW
+              </button>
               {/* <a href="#apply">apply now</a> */}
               {/* <button onclick={navigateapply}>APPLY NOW</button> */}
             </div>

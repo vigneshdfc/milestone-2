@@ -7,16 +7,19 @@ import Appointment from "./component/forms/update";
 import Userform from "./component/forms/apply";
 import Client from "./component/reviews/slide";
 import Bottom from "./component/footer/footer";
-import Service from "./component/ourservice/service";
+import Service from "./component/pages/service";
+import AboutUs from "./component/AboutUs/about";
 import Home from "./component/pages/Home";
-export const UserContext = React.createContext(false);
+
 const App = () => {
-  const [open, setOpen] = React.useState(false);
   return (
     <>
+      <Front />
+
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/Home" element={<Home />} />
         <Route path="/Service" element={<Service />} />
+        <Route path="/About" element={<AboutUs />} />
       </Routes>
     </>
   );

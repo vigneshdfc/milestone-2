@@ -9,6 +9,9 @@
   font-family: "Grold-Regular";
   src: url(./Fonts/Grold-Regular.ttf);
 }
+.inputs label {
+  color: black;
+}
 
 .App {
   padding: 40px;
@@ -52,7 +55,7 @@ input {
   border-style: solid;
   border-color: var(--ast-border-color);
   border-radius: 10px;
-  background: #fafafa;
+  /* background: #fafafa; */
   box-shadow: 2px 4px #0d2c45;
   box-sizing: border-box;
   transition: all 0.2s linear;

@@ -6,12 +6,12 @@ import Appointment from "../../component/forms/update";
 import Userform from "../../component/forms/apply";
 import Images from "../cardshover/cards";
 import Front from "../header/header";
+
 export const UserContext = React.createContext(false);
 const Home = () => {
   const [open, setOpen] = React.useState(false);
   return (
     <>
-      <Front />
       <SimpleSlider />
       <Images />
       <Client />
