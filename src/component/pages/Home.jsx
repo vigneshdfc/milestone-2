@@ -2,6 +2,7 @@ import React from "react";
 import Client from "../../component/reviews/slide";
 import SimpleSlider from "../heroslider/hero";
 import Images from "../cardshover/cards";
+import Bottom from "../../component/footer/footer";
 
 export const UserContext = React.createContext(false);
 const Home = () => {

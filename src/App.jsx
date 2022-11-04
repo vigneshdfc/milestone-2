@@ -3,7 +3,8 @@ import { Route, Routes } from "react-router-dom";
 import Front from "./component/header/header";
 import Service from "./component/pages/Service";
 import Home from "./component/pages/Home";
-import About from "./component/AboutUs/about";
+import Heads from "./component/AboutUs/about";
+import Appointment from "./component/forms/update";
 import Bottom from "./component/footer/footer";
 
 const App = () => {
@@ -11,11 +12,12 @@ const App = () => {
     <>
       <Front />
       <Routes>
-        <Route path="/home" element={<Home />} />
+        <Route path="/" element={<Home />} />
         <Route path="/Service" element={<Service />} />
-        <Route path="/About" element={<About />} />
+        <Route path="/Home" element={<Home />} />
+        <Route path="/about" element={<Heads />} />
+        <Route path="Update" element={<Appointment />} />
       </Routes>
-      <Bottom />
     </>
   );
 };
