@@ -67,6 +67,9 @@ details {
   outline: none;
   width: 600px;
 }
+.details h4 {
+  color: black;
+}
 
 .collect p {
   background: linear-gradient(119.54deg, #000046 0%, #1cb5e0 100%);
@@ -77,6 +80,9 @@ details {
   text-align: center;
   border-radius: 5px;
   padding: 10px;
+}
+.type label {
+  color: black;
 }
 button {
   box-shadow: 2px 1px #000046;
