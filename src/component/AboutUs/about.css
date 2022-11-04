@@ -25,9 +25,9 @@
   box-sizing: border-box;
   font-family: "Grold-Regular";
 }
+
 .headContainer {
   background: linear-gradient(119.54deg, #000046 0%, #1cb5e0 100%);
-
   padding: 40px 80px;
 }
 
@@ -37,11 +37,12 @@
   gap: 50px;
   place-items: center;
   margin-top: 30px;
+  color: white;
 }
-h5 {
+.headsWrapper h5 {
   font-size: 20px;
 }
-h5:hover {
+.headsWrapper h5:hover {
   color: rgb(2, 26, 38);
 }
 .headImg img {
@@ -85,7 +86,8 @@ h5:hover {
 }
 
 .he {
-  font-size: 25px;
+  font-size: 30px;
+  color: white;
 }
 
 .she {
@@ -107,8 +109,7 @@ h5:hover {
   justify-content: space-evenly;
   padding: 40px;
   background: linear-gradient(119.54deg, #000046 0%, #1cb5e0 100%);
-
-  /* transition: all 0.3s; */
+  color: white;
 }
 .tree .a p {
   font-size: 30px;
@@ -124,32 +125,18 @@ h5:hover {
   padding: 150px;
   font-size: 50px;
   background: linear-gradient(119.54deg, #000046 0%, #1cb5e0 100%);
-}
-
-button {
-  height: 40px;
-  width: 250px;
-  border-radius: 10px;
-  cursor: pointer;
-  border-style: solid;
-  border-top-width: 2px;
-  border-right-width: 2px;
-  border-left-width: 2px;
-  border-bottom-width: 2px;
-  color: #ffffff;
-  border-color: #0d2c45;
-  background-color: #0d2c45;
-  border-radius: 46px;
-  font-size: 20px;
-  font-weight: 600px;
-  line-height: 1;
-}
-button:hover {
-  background-color: #7fa1b9a1;
+  color: white;
 }
 
 .a:hover {
   transform: scale(1.1);
   opacity: 0.7;
   cursor: pointer;
+}
+
+.sone :hover {
+  color: black;
+}
+.sotwo :hover {
+  color: black;
 }
