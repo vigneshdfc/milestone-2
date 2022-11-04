@@ -43,7 +43,7 @@
   overflow: hidden;
 }
 
-button {
+.but button {
   width: 100%;
   text-decoration: none;
   cursor: pointer;
