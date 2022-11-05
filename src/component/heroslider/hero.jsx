@@ -1,5 +1,5 @@
 import { useState, useRef } from "react";
-import "./Hero.css";
+import "./hero.css";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
