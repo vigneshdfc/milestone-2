@@ -14,9 +14,13 @@ const Front = () => {
       </div>
       <div className="Topnav">
         <h3>LOGO</h3>
+
         <Link to="/">Home</Link>
+
         <a href="#app">Book An Appointment</a>
+
         <Link to="/Service">Our Services</Link>
+
         <Link to="/about">About Us</Link>
         <div className="but">
           <button>
@@ -28,24 +32,3 @@ const Front = () => {
   );
 };
 export default Front;
-{
-  /* <div className="Dropdown">
-          <div
-            className="dropbtn_content"
-            onMouseEnter={() => setDropdown(true)}
-            onMouseLeave={() => setDropdown(false)}
-          >
-            <div class="dropbtn">
-              Book
-              <i class="fa fa-caret-down"></i>
-            </div>
-            {dropdown && (
-              <div className="list">
-                <a href="#Book">
-                  <h6> Book an Appointments</h6>
-                </a>
-              </div>
-            )}
-          </div>
-            </div>*/
-}

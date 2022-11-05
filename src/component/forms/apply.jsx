@@ -258,11 +258,11 @@ const Userform = () => {
           </div>
           <br></br>
           <br></br>
-          <div className="success">
-            <div>
+          <center>
+            <div className="success">
               <button type="submit">Submit</button>
             </div>
-          </div>
+          </center>
         </div>
       </form>
     </div>

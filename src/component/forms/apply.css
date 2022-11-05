@@ -111,7 +111,6 @@ button:hover {
 }
 .success {
   display: flex;
-  padding-left: 160px;
 }
 @media (max-width: 780px) {
   .details,

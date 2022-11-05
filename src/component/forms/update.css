@@ -91,20 +91,19 @@ button:hover {
 }
 .click {
   display: flex;
+  flex-wrap: wrap;
   gap: 60px;
   padding: 25px;
 }
 .book {
   justify-content: space-around;
 }
-.close {
-  display: flex;
-  padding-left: 160px;
-}
 
 @media (max-width: 780px) {
+  form {
+    width: 100%;
+  }
   .inputs,
-  .App,
   input,
   label {
     width: 100%;

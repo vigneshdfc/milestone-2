@@ -51,6 +51,8 @@ h1 {
   color: rgb(177, 175, 175);
 }
 .customers p {
+  display: flex;
+  flex-wrap: wrap;
   padding: 12px;
   font-size: 24px;
   color: rgb(53, 52, 52);
@@ -71,4 +73,7 @@ h1 {
 }
 h3 {
   padding: 20px;
+}
+
+@media (max-width: 480px) {
 }

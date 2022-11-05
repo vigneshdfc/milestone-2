@@ -6,20 +6,28 @@
 .Topnav {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
   background: linear-gradient(119.54deg, #000046 0%, #1cb5e0 100%);
   padding: 2%;
   position: sticky;
   top: 0;
+  padding-right: 20px;
 }
 
 .Topnav a {
   text-decoration: none;
-  color: wheat;
+  color: rgb(231, 103, 18);
   font-size: x-large;
 }
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 20px;
+  padding-right: 20px;
+}
 
-.but button {
+.but button a {
   text-decoration: none;
   cursor: pointer;
   display: inline-block;
@@ -30,12 +38,11 @@
   font-weight: 600;
   height: 50px;
   padding: 0 2rem;
-  color: #c07a41;
   letter-spacing: 0;
   color: #fff;
-  background-color: #5c39298e;
+  background-color: #c7531d;
   box-shadow: 0 1px 3px 0 rgb(0 0 0 / 12%);
-  border-radius: 10px;
+  border-radius: 70px;
 }
 
 .hero {
@@ -49,4 +56,18 @@
   background-color: lightskyblue;
   color: black;
   font-family: "grold";
+}
+@media (max-width: 720px) {
+  .nav {
+    font-size: 12px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+}
+
+@media (max-width: 480px) {
+  .nav {
+    display: none;
+  }
 }

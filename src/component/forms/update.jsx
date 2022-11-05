@@ -250,11 +250,11 @@ const Appointment = () => {
           </div>
           <br></br>
           <br></br>
-          <div className="close">
-            <div>
+          <center>
+            <div className="close">
               <button type="submit">Submit</button>
             </div>
-          </div>
+          </center>
         </div>
       </form>
     </div>
