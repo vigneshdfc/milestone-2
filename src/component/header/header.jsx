@@ -14,12 +14,14 @@ const Front = () => {
       </div>
       <div className="Topnav">
         <h3>LOGO</h3>
-        <Link to="/Home">Home</Link>
+        <Link to="/">Home</Link>
         <a href="#app">Book An Appointment</a>
         <Link to="/Service">Our Services</Link>
         <Link to="/about">About Us</Link>
         <div className="but">
-          <button>JOINUS</button>
+          <button>
+            <a href="https://aadhar-partner.netlify.app/">JOINUS</a>
+          </button>
         </div>
       </div>
     </div>

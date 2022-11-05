@@ -103,8 +103,10 @@ button:hover {
 }
 
 @media (max-width: 780px) {
-  .book,
-  input {
+  .inputs,
+  .App,
+  input,
+  label {
     width: 100%;
   }
 }
